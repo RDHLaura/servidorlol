@@ -156,7 +156,7 @@ function crearDiv(urlImg, personaje) {
 
 function playJoke(event){
     //console.log(event.target.id);
-    new Audio(`./sounds/jokes/${event.target.id}.joke.wav`).play();
+    new Audio(`./sounds/jokes/${event.target.id.replace("%", " ")}.joke.wav`).play();
 }
 
 function playLaugh(event){
