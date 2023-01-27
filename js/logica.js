@@ -156,12 +156,12 @@ function crearDiv(urlImg, personaje) {
 
 function playJoke(event){
     //console.log(event.target.id);
-    new Audio(`./sounds/jokes/${event.target.id.replace("%", " ")}.joke.wav`).play();
+    new Audio(`./sounds/jokes/${event.target.id.replaceAll("%", " ")}.joke.wav`).play();
 }
 
 function playLaugh(event){
     //console.log(event.target.id);
-    new Audio(`./sounds/laugh/${event.target.id.replace("%", " ")}.laugh1.wav`).play();
+    new Audio(`./sounds/laugh/${event.target.id.replaceAll("%", " ")}.laugh1.wav`).play();
 }
 
 /*
