@@ -161,7 +161,7 @@ function playJoke(event){
 
 function playLaugh(event){
     //console.log(event.target.id);
-    new Audio(`./sounds/laugh/${event.target.id}.laugh1.wav`).play();
+    new Audio(`./sounds/laugh/${event.target.id.replace("%", " ")}.laugh1.wav`).play();
 }
 
 /*
